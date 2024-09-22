@@ -102,15 +102,14 @@ const courses = [
 
     function renderCourses(coursesToShow) {
         const courseContainer = document.querySelector('.courses');
-        courseContainer.innerHTML = ''; // Limpiar contenido previo
-    
+        courseContainer.innerHTML = ''; 
         coursesToShow.forEach(course => {
             const courseCard = document.createElement('div');
             courseCard.classList.add('course-item');
     
-            // Estilo para cursos completados
+            
             if (course.completed) {
-                courseCard.classList.add('completed'); // Clase adicional para cursos completados
+                courseCard.classList.add('completed'); 
             }
     
             courseCard.innerHTML = `
@@ -123,7 +122,7 @@ const courses = [
             courseContainer.appendChild(courseCard);
         });
     
-        // Calcular y mostrar total de créditos
+        
         const totalCredits = courses.reduce((sum, course) => sum + (course.completed ? course.credits : 0), 0);
         document.querySelector('.total-credits').textContent = `Total Credits: ${totalCredits}`;
     }
@@ -142,10 +141,10 @@ const courses = [
         renderCourses(wddCourses);
     }
     
-    // Event listeners para los botones de filtro
+    
     document.querySelector('#all-courses').addEventListener('click', showAllCourses);
     document.querySelector('#cse-courses').addEventListener('click', showCSECourses);
     document.querySelector('#wdd-courses').addEventListener('click', showWDDCourses);
     
-    // Llama a renderCourses al cargar la página
+    
     renderCourses(courses);

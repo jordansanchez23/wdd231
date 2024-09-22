@@ -173,8 +173,8 @@ body {
 }
 
 .completed {
-    background-color: lightgreen; /* Cambia el color según tu esquema */
-    border: 2px solid green; /* Añade un borde para destacar */
+    background-color: lightgreen; 
+    border: 2px solid green; 
 }
 
 footer {
