@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+
+.roboto-thin {
+    font-family: "Roboto", system-ui;
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  .roboto-regular {
+    font-family: "Roboto", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+header {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px 10px;
+    background-color: #000080;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 10px;
+    color: white;
+    width: 100%;
+}
+
+.header img {
+    max-width: 150px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    max-width: 800px;
+    margin-bottom: 20px;
+    list-style-type: none;
+    padding: 0;
+    background-color: black;
+    
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+}
+nav ul li a:hover {
+    color: yellow;
+}
+
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.certificate, .course-work, .location {
+    border: 2px solid gray;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0;
+    background-color: white;
+    margin-bottom: 20px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    max-width: 845px;
+    width: 100%;
+    min-height: 350px;
+    color: black;
+    background-color: transparent;
+    padding: 20px;
+}
+
+.course-work, .location {
+    width: 100%;
+    background-color: white;
+}
+
+.course-work h2, .location h2, .certificate h2 {
+    background-color: #000080;
+    color: white;
+    margin: 0;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+}
+
+.location {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: black;
+}
+
+
+.location img {
+    max-width: 50%;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px;
+    
+    
+}
+
+.course-work ul {
+    margin: 0;
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.certificate {
+    display: flex;
+    flex-direction: column;
+    max-width: 805px;
+    width: 100%;
+    min-height:  150px;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.filter-btn {
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+.filter-btn:hover, .filter-btn.active {
+    color: yellow;
+}
+
+.courses {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+}
+
+.course-item {
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: rgb(223, 224, 214);;
+    color: black;
+}
+
+.completed {
+    background-color: lightgreen; /* Cambia el color según tu esquema */
+    border: 2px solid green; /* Añade un borde para destacar */
+}
+
+footer {
+    background-color: #000080;
+    max-width: 800px;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+footer p {
+    text-align: center;
+    margin: 0;
+}
+
+.white-line {
+    color: white;
+}
+.yellow-line {
+    color: yellow;
+}
+  
+
+#menu {
+    display: none;    
+}
+
+.navigation {
+    flex-direction: row;
+    background-color: transparent;
+    justify-content: space-around; 
+}
+
+.navigation a {
+    display: block;
+    flex: 1 1 100%;
+}

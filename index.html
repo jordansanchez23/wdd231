@@ -8,43 +8,70 @@
     WDD 231 Web Frontend Development I; the Course home page's purpose is to apply the prerequisite knowledge
     by applying HTML, CSS, and JavaScript, the page is responsive and pass basic accesibility tests on lighthouse.">
     <meta name="author" content="Jordan Sanchez">
-    <link rel="stylesheet" href="">
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index-view.css">
+    <link rel="stylesheet" href="styles/index-smallest-view.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:wght@100;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="images/profile.jpg">
+        <div class="header">
+        <img src="images/profile.jpg" alt="Jordan Sanchez">
         <h1>Jordan Sanchez</h1>
+        <button id="menu" aria-label="Toggle Menu"></button>
+        </div>
         <nav class="navigation">
-            <a href="index.html">Home</a>
-            <a href="https://www.vistachamber.org/">Chamber</a>
-            <a href="https://github.com/jordansanchez23">GitHub Profile</a>
-            <a href="https://www.linkedin.com/in/jordan-sanchez-90b607210/">Linkedin</a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="https://www.vistachamber.org/">Chamber</a></li>
+                <li><a href="https://github.com/jordansanchez23">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/jordan-sanchez-90b607210/">Linkedin</a></li>
+            </ul>
         </nav>
     </header>
     <main>
-        <section class="course-work">
-            <h2>Course Work</h2>
-            <ul>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-            </ul>
-        </section>
-        <section class="location">
-            <h2>Mexico</h2>
-                <figure>
-                <img src="/images/mexico.jpg">
-                    <figcaption>Flag from Mexico</figcaption>
-                </figure>
-        </section>
+        <div class="row">
+            <section class="course-work">
+                <h2>Course Work</h2>
+                <ul>
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                </ul>
+            </section>
+            <section class="location">
+                <h2>Mexico</h2>
+                    <figure>
+                    <img src="/images/mexico.jpg">
+                        <figcaption>Flag from Mexico</figcaption>
+                    </figure>
+            </section>
+        </div>
         <section class="certificate">
             <h2>Web and Computer Programming Certificate</h2>
+            <div class="filters">
+                <button id="all-courses" class="filter-btn" data-filter="all">All</button>
+                <button id="cse-courses" class="filter-btn" data-filter="cse">CSE</button>
+                <button id="wdd-courses" class="filter-btn" data-filter="wdd">WDD</button>
+            </div>
+
+            <div class="courses">
+                <div class="course-item" data-category="cse">CSE 110</div>
+                <div class="course-item" data-category="cse">WDD 130</div>
+                <div class="course-item" data-category="cse">CSE 111</div>
+                <div class="course-item" data-category="cse">CSE 210</div>
+                <div class="course-item" data-category="cse">WDD 131</div>
+                <div class="course-item" data-category="cse">WDD 231</div>
+            </div>
+            <p class="total-credits"></p>
+
         </section>
     </main>
     <footer>
-        <p>© <span id="currentYear"></span> | Jordan Sanchez | United States</p>
-        <p id="lastModified"></p>
+        <p class="white-line">© <span id="currentYear"></span> | Jordan Sanchez | United States</p>
+        <p id="lastModified" class="yellow-line"></p>
     </footer>
     <script src="scripts/index.js" defer></script>
 </body>
