@@ -1,0 +1,23 @@
+{
+    "familyName" : "Sanchez",
+     "dateMoved" : "9/24/2024",
+     "numberOfPeople" : 3,
+     "visited" : false,
+     "familyMembers" : [
+        {
+            "name" : "Jordan Sanchez",
+            "gender" : "Male",
+            "birthdate" : "11/22/1997"
+        },
+        {
+            "name" : "Heidi Sanchez",
+            "gender" : "Female",
+            "birthdate" : "11/01/2001"
+        },
+        {
+            "name" : "Cathalina Sanchez",
+            "gender" : "Female",
+            "birthdate" : "11/09/2025"
+        }
+     ]
+}
