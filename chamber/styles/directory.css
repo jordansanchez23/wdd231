@@ -110,6 +110,12 @@ footer p {
     background-color: var(--primary-text-color);
 }
 
+/*******************/
+/*      Menu       */
+/*******************/
+#menu {
+    display: block;
+}
 
 
     
