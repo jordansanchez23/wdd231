@@ -1,0 +1,116 @@
+:root {
+    --primary-color: #143642;
+    --secondary-color: #D19C1D;
+    --third-color: #2F97C1;
+    --background-color: #fdfffc;
+    --card-background-color: ;
+
+    --heading-font: "Playfair", serif;
+    --paragraph-font: "Barlow", sans-serif;
+
+    --primary-text-color: #ffffff;
+    --secondary-text-color: #000000;
+    --nav-link-color: var(--primary-text-color);
+    --nav-background-color: var(--primary-color);
+    --nav-hover-link-color:var(--secondary-text-color);
+    --nav-hover-background-color: var(--secondary-color);
+}
+
+* {
+    font-family: var(--paragraph-font);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--paragraph-font);
+    background-color: var(--background-color);
+}
+
+h1, h2, .navigation {
+    font-family: var(--heading-font);
+}
+
+/*Header*/
+
+header {
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+}
+
+.header {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+
+nav ul {
+    display: block;
+    list-style-type: none;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 5px;
+    color: var(--primary-text-color);
+    
+}
+
+nav ul li a:hover{
+    background-color: var(--secondary-color);
+    color: var(--secondary-text-color);
+    
+}
+
+
+/****************/
+/*    Footer    */
+/****************/
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--primary-color);
+    margin-top: 10px;
+    padding: 20px;
+}
+
+footer p {
+    color: var(--primary-text-color);
+}
+
+.social-media-tags {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 10px;
+}
+
+.social-media-tags a{
+    text-decoration: none;
+    color: var(--primary-text-color);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    margin: 0 10px;
+    padding: 10px;
+    overflow: hidden;
+    border: 2px solid var(--primary-text-color);
+    font-size: 1.5em;
+    transition: color 900ms; background-color: 900ms ease-in-out;
+
+
+}
+
+.social-media-tags a:hover {
+    color: var(--primary-color);
+    background-color: var(--primary-text-color);
+}
+
+
+
+    
+
