@@ -1,0 +1,157 @@
+{
+    "directory": [
+        {
+            "name": "Albertacos Mex Food, Inc",
+            "address": "601 Sycamore Ave Vista CA 92083",
+            "phone": "(760) 598-6047",
+            "url": "https://albertacos.net/",
+            "email": "albertacosmexfood@gmail.com",
+            "image": "images/albert-tacos.png",
+            "membership": "1",
+            "fund_year": "1979"
+        },
+
+        {
+            "name": "AwnGuard",
+            "address": "4503 Coronado Drive Oceanside CA 92057",
+            "phone": "(760) 435-1367",
+            "url": "https://www.awnguard.com/",
+            "email": "support@awnguard.org",
+            "image": "images/awnguard.webp",
+            "membership": "3",
+            "fund_year": "2001"
+        },
+
+        {
+            "name": "Local Roots Kombucha",
+            "address": "1430 Vantage Court, Suite 101 Vista CA 92081",
+            "phone": "(619) 452-0165",
+            "url": "https://www.localrootskombucha.com/",
+            "email": "info@localrootskombucha.com",
+            "image": "images/local-roots.png",
+            "membership": "2",
+            "fund_year": "2017"
+        },
+
+        {
+            "name": "Lava Propane, LLC",
+            "address": "1298 Distribution Way Vista CA 92081",
+            "phone": "(760) 599-4735",
+            "url": "https://www.lavapropane.com/",
+            "email": "sales@lavapropane.com",
+            "image": "images/lava.png",
+            "membership": "3",
+            "fund_year": "2007"
+        },
+
+        {
+            "name": "Backstreet Brewery",
+            "address": "15 Main St #B-100 Vista CA 92083",
+            "phone": "(760) 407-7600",
+            "url": "https://lamppostpizzavista.com/",
+            "email": "backstreetbrewery@outlook.com",
+            "image": "images/backstreet-brewery.jpeg",
+            "membership": "1",
+            "fund_year": "1976"
+        },
+
+        {
+            "name": "Star Fox Media",
+            "address": "170 Eucalyptus Ave Vista CA 92084",
+            "phone": "(760) 822-9610",
+            "url": "http://www.starfox.media/",
+            "email": "support@starfoxmedia.org",
+            "image": "images/star-fox-media.png",
+            "membership": "2",
+            "fund_year": "2012"
+        },
+
+        {
+            "name": "Scout & Cellar",
+            "address": "2723 Athens Ave Carlsbad CA 92010",
+            "phone": "(760) 518-9210",
+            "url": "http://scoutandcellar.com/welovewine",
+            "email": "contact@scoutandcellar.net",
+            "image": "images/scout-cellar.png",
+            "membership": "2",
+            "fund_year": "2017"
+        },
+        {
+            "name": "Shorebreak Insurance",
+            "address": "2647 Gateway Rd, Ste 105-153 Carlsbad CA 92009",
+            "phone": "(760) 512-1300",
+            "url": "https://www.shorebreakinsurance.com/",
+            "email": "info@shorebreakinsurance.com",
+            "image": "images/shorebreak-insurance.jpeg",
+            "membership": "2",
+            "fund_year": "2015"
+        },
+
+        {
+            "name": "Moonlight Cultural Foundation",
+            "address": "38 Civic Center Dr Ste 207 Vista CA 92084",
+            "phone": "(760) 630-7650",
+            "url": "https://www.moonlightstage.com/",
+            "email": "info@moonlightculturalfoundation.com",
+            "image": "images/moonlight-cultural.jpeg",
+            "membership": "3",
+            "fund_year": "1982"
+        },
+
+        {
+            "name": "Mikko Sushi",
+            "address": "330 Main St. Vista CA 92084",
+            "phone": "(760) 842-8001",
+            "url": "https://mikkosushi.com/",
+            "email": "support@mikkosushi.org",
+            "image": "images/mikko-sushi.png",
+            "membership": "3",
+            "fund_year": "2019"
+        },
+
+        {
+            "name": "Main Street Dental",
+            "address": "1830 Hacienda Dr., Suite 1 Vista CA 92081",
+            "phone": "(760) 295-9870",
+            "url": "https://www.msdsmiles.com/",
+            "email": "info@msdsmiles.com",
+            "image": "images/lavmain-street-dental.png",
+            "membership": "1",
+            "fund_year": "2013"
+        },
+
+        {
+            "name": "Haro Bikes",
+            "address": "1230 Avenida Chelsea Vista CA 92081",
+            "phone": "(800) 289-4276",
+            "url": "https://harobikes.com/",
+            "email": "harobikes@yahoo.com",
+            "image": "images/haro-bikes.jpeg",
+            "membership": "2",
+            "fund_year": "2008"
+        },
+
+        {
+            "name": "Hungry Bear Deli",
+            "address": "2205 S. Melrose #103 Vista CA 92081",
+            "phone": "(760) 295-2295",
+            "url": "https://www.hungrybeardeli.com/",
+            "email": "support@hungrybeardeli.org",
+            "image": "images/hungry-bear-sandwiches.png",
+            "membership": "1",
+            "fund_year": "1998"
+        },
+
+        {
+            "name": "Kingdom Kutz",
+            "address": "101 S. Indiana Ave Vista CA 92084",
+            "phone": "(760) 295-0637",
+            "url": "https://kingdomkutzvista.com/",
+            "email": "1kingdom.kutz@gmail.com",
+            "image": "images/kingdom-kutz.jpeg",
+            "membership": "3",
+            "fund_year": "2022"
+        }
+
+    ]
+}
