@@ -22,5 +22,10 @@
         background-color: var(--primary-color);
     }
 
+    /*Menu*/
+    #menu {
+        display: none;
+    }
+
     
 }
