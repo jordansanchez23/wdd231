@@ -3,7 +3,7 @@
     --secondary-color: #D19C1D;
     --third-color: #2F97C1;
     --background-color: #fdfffc;
-    --card-background-color: ;
+    --card-background-color: /*#D9CBAE;*/ #6A041D; 
 
     --heading-font: "Playfair", serif;
     --paragraph-font: "Barlow", sans-serif;
@@ -30,6 +30,10 @@ body {
 
 h1, h2, .navigation {
     font-family: var(--heading-font);
+}
+
+h1 {
+    text-align: center;
 }
 
 /*Header*/
@@ -165,13 +169,124 @@ footer p {
     background-color: var(--primary-text-color);
 }
 
-.members-cards {
-    border: 1px solid red; 
-    min-height: 100px; 
-    padding: 10px; 
-    background-color: rgba(255, 0, 0, 0.1); 
+/******************/
+/*Grid/List Button*/
+/******************/
+.button-container {
+    display: flex;
+    justify-content: center; 
+    margin-bottom: 20px; 
+}
+#grid-list {
+    background-color: var(--card-background-color);
+    color: var(--primary-text-color);
+    padding: 15px;
+    border-radius: 10px;
+    margin: 0;
+    cursor: pointer;
+    
 }
 
+
+
+/*************************/
+/*Member Cards(List view)*/
+/*************************/
+.members-cards.list {
+    display: flex; 
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.members-cards.list section {
+    display: flex; 
+    align-items: center; 
+    padding: 10px; 
+}
+
+.members-cards.list img {
+    width: 100px; 
+    height: auto; 
+    margin-right: 20px; 
+}
+
+.members-cards.list h2 {
+    font-size: 1.5rem; 
+    margin-bottom: 10px; 
+}
+
+.members-cards.list p {
+    margin: 5px 0; 
+}
+
+
+
+/*************************/
+/*Member Cards(Grid view)*/
+/*************************/
+
+.members-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.members-cards a {
+    color: var(--primary-text-color);
+    text-decoration: none;
+}
+
+.members-cards a:hover {
+    color: var(--secondary-color);
+}
+
+.members-cards section {
+    transition:  transform 0.3s ease;
+
+}
+
+.members-cards section:hover {
+    transform: scale(1.05); 
+}
+
+section {
+    background-color: var(--card-background-color);
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+    text-align: center;
+    padding: 20px;
+}
+
+
+h2 {
+    color: var(--primary-text-color);
+    margin-bottom: 50px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+p {
+    color: var(--primary-text-color);
+}
+
+/*.membership {
+    font-weight: bold;
+    font-size: 16px;
+    background-color: brown;
+}
+
+.silver {
+    background-color: silver;
+}
+
+.gold {
+    background-color: gold; 
+}*/
     
 @media screen and (max-width: 700px) {
     .navigation {

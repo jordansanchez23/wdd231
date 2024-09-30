@@ -1,8 +1,16 @@
+//Display between grid or list //
+const listDisplay = document.querySelector("#grid-list");
+const cardsArea = document.querySelector("#cards-area");
+
+listDisplay.addEventListener("click", () => {
+    cardsArea.classList.toggle("list");
+});
+
 const directory = "data/directory.json";
 const membersCards = document.querySelector(".members-cards");
 
 async function getMemberData() {
-    const response = await fetch(directoryJSON);
+    const response = await fetch(directory);
     const data = await response.json();
     displayDirectory(data.directory)
 }
@@ -19,6 +27,19 @@ const displayDirectory = (directory) => {
         let email = document.createElement("p");
         let image = document.createElement("img");
         let membership = document.createElement("p");
+        membership.classList.add("membership");
+        if (member.membership == 1) {
+            membership.textContent = "Member";
+        }
+        if (member.membership == 2) {
+            membership.classList.add("silver");
+            membership.textContent = "Silver Member";
+        }
+        if (member.membership == 3) {
+            membership.classList.add("gold");
+            membership.textContent = "Gold Member";
+        }
+
         let fund_year = document.createElement("p");
 
         //Adding the content//
