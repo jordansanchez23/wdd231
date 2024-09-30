@@ -108,7 +108,7 @@ footer p {
     overflow: hidden;
     border: 2px solid var(--primary-text-color);
     font-size: 1.5em;
-    transition: color 300ms; background-color: 300ms ease-in-out;
+    transition: color 300ms;
 
 
 }
