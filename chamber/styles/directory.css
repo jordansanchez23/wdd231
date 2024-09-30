@@ -165,6 +165,12 @@ footer p {
     background-color: var(--primary-text-color);
 }
 
+.members-cards {
+    border: 1px solid red; 
+    min-height: 100px; 
+    padding: 10px; 
+    background-color: rgba(255, 0, 0, 0.1); 
+}
 
     
 @media screen and (max-width: 700px) {

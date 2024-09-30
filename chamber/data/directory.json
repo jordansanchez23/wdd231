@@ -7,8 +7,8 @@
             "url": "https://albertacos.net/",
             "email": "albertacosmexfood@gmail.com",
             "image": "images/albert-tacos.png",
-            "membership": "1",
-            "fund_year": "1979"
+            "membership": 1,
+            "fund_year": 1979
         },
 
         {
@@ -18,8 +18,8 @@
             "url": "https://www.awnguard.com/",
             "email": "support@awnguard.org",
             "image": "images/awnguard.webp",
-            "membership": "3",
-            "fund_year": "2001"
+            "membership": 3,
+            "fund_year": 2001
         },
 
         {
@@ -29,8 +29,8 @@
             "url": "https://www.localrootskombucha.com/",
             "email": "info@localrootskombucha.com",
             "image": "images/local-roots.png",
-            "membership": "2",
-            "fund_year": "2017"
+            "membership": 2,
+            "fund_year": 2017
         },
 
         {
@@ -40,8 +40,8 @@
             "url": "https://www.lavapropane.com/",
             "email": "sales@lavapropane.com",
             "image": "images/lava.png",
-            "membership": "3",
-            "fund_year": "2007"
+            "membership": 3,
+            "fund_year": 2007
         },
 
         {
@@ -51,8 +51,8 @@
             "url": "https://lamppostpizzavista.com/",
             "email": "backstreetbrewery@outlook.com",
             "image": "images/backstreet-brewery.jpeg",
-            "membership": "1",
-            "fund_year": "1976"
+            "membership": 1,
+            "fund_year": 1976
         },
 
         {
@@ -62,8 +62,8 @@
             "url": "http://www.starfox.media/",
             "email": "support@starfoxmedia.org",
             "image": "images/star-fox-media.png",
-            "membership": "2",
-            "fund_year": "2012"
+            "membership": 2,
+            "fund_year": 2012
         },
 
         {
@@ -73,8 +73,8 @@
             "url": "http://scoutandcellar.com/welovewine",
             "email": "contact@scoutandcellar.net",
             "image": "images/scout-cellar.png",
-            "membership": "2",
-            "fund_year": "2017"
+            "membership": 2,
+            "fund_year": 2017
         },
         {
             "name": "Shorebreak Insurance",
@@ -83,8 +83,8 @@
             "url": "https://www.shorebreakinsurance.com/",
             "email": "info@shorebreakinsurance.com",
             "image": "images/shorebreak-insurance.jpeg",
-            "membership": "2",
-            "fund_year": "2015"
+            "membership": 2,
+            "fund_year": 2015
         },
 
         {
@@ -94,8 +94,8 @@
             "url": "https://www.moonlightstage.com/",
             "email": "info@moonlightculturalfoundation.com",
             "image": "images/moonlight-cultural.jpeg",
-            "membership": "3",
-            "fund_year": "1982"
+            "membership": 3,
+            "fund_year": 1982
         },
 
         {
@@ -105,8 +105,8 @@
             "url": "https://mikkosushi.com/",
             "email": "support@mikkosushi.org",
             "image": "images/mikko-sushi.png",
-            "membership": "3",
-            "fund_year": "2019"
+            "membership": 3,
+            "fund_year": 2019
         },
 
         {
@@ -115,9 +115,9 @@
             "phone": "(760) 295-9870",
             "url": "https://www.msdsmiles.com/",
             "email": "info@msdsmiles.com",
-            "image": "images/lavmain-street-dental.png",
-            "membership": "1",
-            "fund_year": "2013"
+            "image": "images/main-street-dental.png",
+            "membership": 1,
+            "fund_year": 2013
         },
 
         {
@@ -127,8 +127,8 @@
             "url": "https://harobikes.com/",
             "email": "harobikes@yahoo.com",
             "image": "images/haro-bikes.jpeg",
-            "membership": "2",
-            "fund_year": "2008"
+            "membership": 2,
+            "fund_year": 2008
         },
 
         {
@@ -138,8 +138,8 @@
             "url": "https://www.hungrybeardeli.com/",
             "email": "support@hungrybeardeli.org",
             "image": "images/hungry-bear-sandwiches.png",
-            "membership": "1",
-            "fund_year": "1998"
+            "membership": 1,
+            "fund_year": 1998
         },
 
         {
@@ -149,8 +149,8 @@
             "url": "https://kingdomkutzvista.com/",
             "email": "1kingdom.kutz@gmail.com",
             "image": "images/kingdom-kutz.jpeg",
-            "membership": "3",
-            "fund_year": "2022"
+            "membership": 3,
+            "fund_year": 2022
         }
 
     ]
