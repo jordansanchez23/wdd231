@@ -1,0 +1,23 @@
+.card {
+    border: 1px solid black;
+    background-color: sandybrown;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card h2 {
+    color: greenyellow;
+    margin: .3rem 0;
+}
+
+.card figcaption {
+    text-transform: capitalize;
+    color: black;
+    margin: .3rem 0;
+}
+
+.card #current-temperature {
+    font-size: 2rem;
+    color: black;
+    margin: .3rem 0;
+}
