@@ -243,21 +243,17 @@ footer p {
 
 .members-cards section {
     transition:  transform 0.3s ease;
+    background-color: var(--card-background-color);
+    border-radius: 5px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
+    text-align: center;
+    padding: 20px;
 
 }
 
 .members-cards section:hover {
     transform: scale(1.05); 
 }
-
-section {
-    background-color: var(--card-background-color);
-    border-radius: 5px;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 1);
-    text-align: center;
-    padding: 20px;
-}
-
 
 h2 {
     color: var(--primary-text-color);
