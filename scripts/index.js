@@ -123,7 +123,10 @@ const courses = [
         });
     
         
-        const totalCredits = courses.reduce((sum, course) => sum + (course.completed ? course.credits : 0), 0);
+        const totalCredits = courses.reduce((sum, course) => {
+            return sum + (course.credits ? course.credits : 0);
+        }, 0);
+        
         document.querySelector('.total-credits').textContent = `Total Credits: ${totalCredits}`;
     }
     

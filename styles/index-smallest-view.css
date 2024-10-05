@@ -20,7 +20,7 @@
     }
     
     #menu {
-        display: block;
+        display: grid;
         font-size: 2rem;
         font-weight: 700;
         text-decoration: none;
@@ -28,6 +28,7 @@
         background-color: #eee;
         color: #000;
         cursor: pointer; 
+        text-align: center;
     }
     
     #menu::before {
@@ -37,12 +38,14 @@
     nav {
         background-color: tomato;
         display: none; 
+        flex-direction: column;
     }
     
     .navigation {
         list-style: none;
         margin: 0;
         padding: 0; 
+        flex-direction: column;
     }
     
     .navigation li {
@@ -68,7 +71,7 @@
     }
     
     .show {
-        display: block; 
+        display: flex; 
     }
     
     #menu.show::before {
