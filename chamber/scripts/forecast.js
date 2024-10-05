@@ -26,7 +26,7 @@ function displayData(data) {
     forecastCard.appendChild(name); 
 
     const today = new Date(); 
-    const days = [0, 1, 2]; 
+    const days = [1, 2, 3]; 
 
     days.forEach((i) => {
         const forecastDate = new Date();
