@@ -98,7 +98,7 @@ nav ul li a:hover{
 
 .call-to-action a {
     background-color: var(--secondary-color);
-    color: var(--secondary-color-text);
+    color: var(--secondary-text-color);
     border-radius: 15px;
     padding: 15px;
     text-decoration: none;
@@ -230,6 +230,43 @@ footer p {
     
 }
 
+/********************************/
+/*            Cards             */
+/********************************/
+.cards {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    gap: 10px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+
+.events-card, .weather-card, .forecast-card {
+    background-color: var(--secondary-color);
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    height: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.events-card > h2 {
+    background-color: var(--primary-color);
+}
+
+.events-card > p, .forecast-card > p {
+    padding: 10px;
+}
+
+
+/********************************/
+/*          Spotlights         */
+/********************************/
 
 
 /*************************/
@@ -299,6 +336,8 @@ footer p {
 }
 
 h2 {
+    padding: 10px;
+    background-color: var(--primary-color);
     color: var(--primary-text-color);
     margin-bottom: 50px;
 }
@@ -310,7 +349,7 @@ img {
 }
 
 p {
-    color: var(--primary-text-color);
+    color: var(--secondary-text-color)
 }
 
 /*.membership {
@@ -330,6 +369,10 @@ p {
 @media screen and (max-width: 700px) {
     .navigation {
         display: none;
+    }
+
+    .cards {
+        display: grid;
     }
 }
 
