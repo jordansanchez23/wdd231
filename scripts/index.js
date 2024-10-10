@@ -16,7 +16,27 @@ hambutton.addEventListener('click', () => {
 	mainnav.classList.toggle('show');
 	hambutton.classList.toggle('show');
 });
+const courseDetails = document.getElementById("course-details")
 
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+      <button id="closeModal">❌</button>
+      <h2>${course.subject} ${course.number}</h2>
+      <h3>${course.title}</h3>
+      <p><strong>Credits</strong>: ${course.credits}</p>
+      <p><strong>Certificate</strong>: ${course.certificate}</p>
+      <p>${course.description}</p>
+      <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+    
+    const closeModal = document.getElementById("closeModal");
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+    
+  }
 
 
 
@@ -113,12 +133,14 @@ const courses = [
             }
     
             courseCard.innerHTML = `
-                <h3>${course.title}</h3>
-                <p>${course.description}</p>
-                <p><strong>Credits:</strong> ${course.credits}</p>
-                <p><strong>Technology:</strong> ${course.technology.join(', ')}</p>
+                <h3>${course.subject} ${course.number}</h3>
+                
             `;
-    
+            
+            courseCard.addEventListener('click', () => {
+                displayCourseDetails(course);
+            });
+
             courseContainer.appendChild(courseCard);
         });
     
