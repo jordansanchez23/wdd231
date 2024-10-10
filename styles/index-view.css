@@ -239,3 +239,39 @@ dialog {
     border: 1px solid rgba(0, 0, 0, 0.1);
     cursor: pointer;
   }
+
+/*Css Animation*/
+.header {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+.header > h1 {
+    display: inline-block;
+    animation-duration: 3s;
+    animation-name: fav;
+}
+
+@keyframes slidein {
+    from {
+        translate: 150vw 0;
+        scale: 200% 1;
+    }
+
+    to {
+        translate: 0 0;
+        scale: 100% 1;
+    }
+}
+
+@keyframes fav {
+    25%,
+    75% {
+        scale: 100%;
+    }
+
+    50% {
+        scale: 200%;
+        color: blue;
+    }
+}
