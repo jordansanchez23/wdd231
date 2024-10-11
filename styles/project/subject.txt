@@ -1,0 +1,4 @@
+1)Project Subject: Website of Warhammer 40K: Exploration of Its Rich Universe (one of my favs universe where has more than 600 books and a lot of fun!)
+2)Project Description: This website will provide informative content about the different factions in the Warhammer 40k universe, such as humans, Orks, and Chaos. Each section will include background lore and unique characteristics offering visitors a comprehensive look at this expansive universe
+3)Project Reason and purpose: I think that the Universe of Warhammer 40k is huge and amazing, it allows you to imagine and read with a lot of curiosity, and the other hand
+this project allows me to combine my hobbies with my new knowledge of APIs and web accessibility, showcasing data, images, and stories from this incredible universe
