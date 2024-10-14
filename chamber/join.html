@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/main-larger-view.css">
+    <link rel="stylesheet" href="styles/join.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -48,47 +49,45 @@
                 <li><a href="#">Discover</a></li>
             </ul>
         </nav>
-        <dialog>
-            <modal id="modal" class="goldModal">
-                <h2>Gold🥇 Membership</h2>
-                <hr>
-                <p>Priority access to all chamber events</p>
-                <p>Exclusive networking opportunities with top-tier members</p>
-                <p>Company promotion in chamber publications and social media</p>
-                <p>Free attendance to all workshops and seminars</p>
-                <p>Access to a dedicated business advisor</p> 
-                <p>Price: $1000 USD/year</p>
-            </modal>
-            <modal id="modal" class="silverModal">
-                <h2>Silver🥈 Membership</h2>
-                <hr>
-                <p>Access to chamber events with discounted rates</p>
-                <p>Business listing on the chamber website</p>
-                <p>Participation in chamber-sponsored trade shows</p>
-                <p>Access to professional development workshops</p>
-                <p>Networking opportunities with other members</p>
-                <p>Price: $500 USD/year</p>
-            </modal>
-            <modal id="modal" class="bronzeModal">
-                <h2>Bronze🥉 Membership</h2>
-                <hr>
-                <p>Business listing on the chamber directory</p>
-                <p>Access to selected chamber events</p>
-                <p>Discounted rates on chamber workshops</p>
-                <p>Free access to chamber networking events</p>
-                <p>Access to the chamber newsletter</p>
-                <p>Price: $250 USD/year</p>
-            </modal>
-            <modal id="modal" class="nonProfitModal">
-                <h2>Non-profit👌 Membership</h2>
-                <hr>
-                <p>Business listing in the non-profit section of the chamber website</p>
-                <p>Access to discounted event spaces for fundraising and community events</p>
-                <p>Promotion of non-profit events in chamber publications</p>
-                <p>Free access to chamber networking events</p>
-                <p>Opportunities for collaboration with other non-profits and businesses</p>
-                <p>Price: $100 USD/year</p>
-            </modal>
+        <dialog class="modal" id="goldModal">
+            <h2>Gold🥇 Membership</h2>
+            <hr>
+            <p>Priority access to all chamber events</p>
+            <p>Exclusive networking opportunities with top-tier members</p>
+            <p>Company promotion in chamber publications and social media</p>
+            <p>Free attendance to all workshops and seminars</p>
+            <p>Access to a dedicated business advisor</p> 
+            <p>Price: $1000 USD/year</p>
+        </dialog>
+        <dialog class="modal" id="silverModal">
+            <h2>Silver🥈 Membership</h2>
+            <hr>
+            <p>Access to chamber events with discounted rates</p>
+            <p>Business listing on the chamber website</p>
+            <p>Participation in chamber-sponsored trade shows</p>
+            <p>Access to professional development workshops</p>
+            <p>Networking opportunities with other members</p>
+            <p>Price: $500 USD/year</p>
+        </dialog>
+        <dialog class="modal" id="bronzeModal">
+            <h2>Bronze🥉 Membership</h2>
+            <hr>
+            <p>Business listing on the chamber directory</p>
+            <p>Access to selected chamber events</p>
+            <p>Discounted rates on chamber workshops</p>
+            <p>Free access to chamber networking events</p>
+            <p>Access to the chamber newsletter</p>
+            <p>Price: $250 USD/year</p>
+        </dialog>
+        <dialog class="modal" id="nonProfitModal">
+            <h2>Non-profit👌 Membership</h2>
+            <hr>
+            <p>Business listing in the non-profit section of the chamber website</p>
+            <p>Access to discounted event spaces for fundraising and community events</p>
+            <p>Promotion of non-profit events in chamber publications</p>
+            <p>Free access to chamber networking events</p>
+            <p>Opportunities for collaboration with other non-profits and businesses</p>
+            <p>Price: $100 USD/year</p>
         </dialog>
     </header>
     <main>
@@ -100,46 +99,46 @@
                     <label for="firstName">First Name: <input type="text" name="firstName" id="firstName" autocomplete="given-name" required></label>
                     <label for="lastName">Last Name: <input type="text" name="lastName" id="lastName" autocomplete="family-name" required></label>
                     <label for="orgTitle">Organization Title: <input type="text" name="orgTitle" id="orgTitle" autocomplete="organization-title" pattern="^[a-zA-Z\s-]{7,}"></label>
-                    <label for="email">Email: <input type="email" name="email" id="name" autocomplete="email" required placeholder="membership@example.com"></label>
+                    <label for="email">Email: <input type="email" name="email" id="email" autocomplete="email" required placeholder="membership@example.com"></label>
                     <label for="phoneNumber">Phone Number: <input type="tel" name="phoneNumber" id="phoneNumber" autocomplete="tel" required></label>
                 </fieldset>
                 <fieldset>
                     <legend>Business/Organization's Information</legend>
-                    <label for="businessName">Business/Organization's Name: <input type="text" name="businessName" id="businessName" autocomplete="organization" required>
+                    <label for="businessName">Business/Organization's Name: <input type="text" name="businessName" id="businessName" autocomplete="organization" required></label>
                     <label for="membershipLevel">Membership Level: <select name="membershipLevel" id="membership" required>
                         <option value="" selected disabled>Choose a level...</option>
                         <option value="gold">Gold🥇</option>
                         <option value="silver">Silver🥈</option>
                         <option value="bronze">Bronze🥉</option>
-                        <option value="gold">Non-Profit👌</option>
+                        <option value="nonProfit">Non-Profit👌</option>
                     </select></label>
-                    <label for="description">Business/Organization's description:<textarea name="description" id="description"></textarea></label>
+                    <label for="description">Organization's description:<textarea name="description" id="description"></textarea></label>
                     <input type="hidden" name="timeStamp" id="timeStamp">
                 </fieldset>
-                    <button type="submit">Apply to membership</button>
-                <div class="sidebar">
-                    <div class="membership-card" id="goldCard">
-                        <h2>Gold Level</h2>
-                        <hr>
-                        <p class="membership-card-details">See more</p>
-                    </div>
-                    <div class="membership-card" id="silverCard">
-                        <h2>Silver Level</h2>
-                        <hr>
-                        <p class="membership-card-details">See more</p>
-                    </div>
-                    <div class="membership-card" id="bronzeCard">
-                        <h2>Bronze Level</h2>
-                        <hr>
-                        <p class="membership-card-details">See more</p>
-                    </div>
-                    <div class="membership-card" id="nonprofitCard">
-                        <h2>Non-profit Level</h2>
-                        <hr>
-                        <p class="membership-card-details">See more</p>
-                    </div>
-                </div>
+                <button type="submit">Apply Now</button>
             </form>
+        </div>
+        <div class="sidebar">
+            <div class="membership-card" id="goldCard">
+                <h2>Gold Level</h2>
+                    <hr>
+                    <p class="membership-card-details">See more</p>
+            </div>
+            <div class="membership-card" id="silverCard">
+                <h2>Silver Level</h2>
+                <hr>
+                <p class="membership-card-details">See more</p>
+            </div>
+            <div class="membership-card" id="bronzeCard">
+                <h2>Bronze Level</h2>
+                <hr>
+                <p class="membership-card-details">See more</p>
+            </div>
+            <div class="membership-card" id="nonProfitCard">
+                <h2>Non-profit Level</h2>
+                <hr>
+                <p class="membership-card-details">See more</p>
+            </div>
         </div>
     </main>
     <footer>
@@ -162,5 +161,6 @@
         </div>
     </footer>
     <script src="scripts/footer.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 </body>
 </html>

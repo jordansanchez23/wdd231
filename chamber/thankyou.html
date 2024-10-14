@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/main-larger-view.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
@@ -50,7 +51,44 @@
         </nav>
     </header>
     <main>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et debitis aspernatur animi illum! Aperiam animi tempora quae magnam eos, veritatis vero distinctio aspernatur, necessitatibus expedita autem voluptatem sunt eligendi ipsam.</p>
+        <div class="details-table">
+            <div class="table">
+                <span class="column1">Membership level: </span>
+                <span class="column2" id="membershipLevel">Placeholder</span>
+            </div>
+            <div class="table">
+                <span class="column1">First name: </span>
+                <span class="column2" id="firstName">Placeholder</span>
+            </div>
+            <div class="table">
+                <span class="column1">Last name: </span>
+                <span class="column2" id="lastName">Placeholder</span>
+            </div>
+            <div class="table">
+                <span class="column1">Title: </span>
+                <span class="column2" id="orgTitle">Placeholder</span>
+            </div>
+            <div class="table">
+                <span class="column1">Email: </span>
+                <span class="column2" id="email">Placeholder</span>
+            </div>
+            <div class="table">
+                <span class="column1">Phone number: </span>
+                <span class="column2" id="phoneNumber">Placeholder</span>
+            </div>
+            <div class="table">
+                <span class="column1">Business/Organization:</span>
+                <span class="column2" id="businessName">Placeholder</span>
+            </div>
+            <div class="table">
+                <span class="column1">Business Description:</span>
+                <span class="column2" id="description">Placeholder</span>
+            </div>
+            <div class="table">
+                <span class="column1">Date:</span>
+                <span class="column2" id="timeStamp">Placeholder</span>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="address">
@@ -71,9 +109,7 @@
             <p>Last Modified: <span id="lastModified"></span></p>
         </div>
     </footer>
-    <script src="scripts/weather.js" type="module"></script>
-    <script src="scripts/forecast.js" type="module"></script>
-    <script src="scripts/spotlight.js" type="module"></script>
     <script src="scripts/footer.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
 </body>
 </html>

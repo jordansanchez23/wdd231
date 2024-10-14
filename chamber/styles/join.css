@@ -1,0 +1,135 @@
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+hr {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin: 15px auto;
+    background-color: rgb(248, 240, 234);
+
+}
+
+fieldset>label {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+button {
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    background-color: #143642;
+    color: #ffffff;
+    font-size: 1.2em;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    color: black;
+    background-color: #D19C1D;
+}
+
+.membership-card >h2, dialog.modal > h2 {
+    color: black;
+    background-color: rgb(248, 240, 234);
+    border-radius: 20px;
+    margin: 0;
+}
+
+.membership-card {
+    color: black;
+    background-color: rgb(248, 240, 234);
+    border: 1px solid black;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 20px;
+    text-align: center;
+    width: 200px;
+    height: auto;
+    height: 100px;
+    margin: 10px auto;
+}
+
+#goldCard:hover, #goldCard:hover >h2 {
+    background-color: #D7C46D;
+}
+
+#silverCard:hover, #silverCard:hover >h2 {
+    background-color: #D7D7D7;
+}
+
+#bronzeCard:hover, #bronzeCard:hover >h2 {
+    background-color: #8C5D3B;
+}
+
+#nonProfitCard:hover, #nonProfitCard:hover >h2 {
+    background-color: white;
+}
+
+/**********************/
+/*       Modals       */
+/**********************/
+dialog.modal {
+    position: fixed;
+    align-self: center;
+    margin: 0 auto;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgb(248, 240, 234);
+    max-width: 650px;
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+}
+
+dialog.modal >hr {
+    max-width: 95%;
+    border-style: solid;
+}
+
+/**********************/
+/*      Animation     */
+/**********************/
+
+.membership-card {
+    animation: 1s ease-out 0s 1 slideInFromRight;
+}
+
+@keyframes slideInFromRight {
+    0% {
+      transform: translateX(300%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+@media screen and (min-width: 701px) {
+    main {
+        flex-direction: row;
+    }
+
+    .form-section {
+        flex: 70%
+    }
+
+    .sidebar {
+        flex: 30%;
+        margin: 20px;
+    }
+
+}
