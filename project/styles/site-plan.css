@@ -1,0 +1,53 @@
+:root {
+    --primary-color: #003DA5;
+    --secondary-color: #D1A82A;
+    --primary-text-color: white;
+    --secondary-text-color: black;
+    --third-text-color: #C0C0C0;
+    --alternative-color: #002A5C;
+
+    --heading-font: "Bebas Neue", sans-serif;
+    --text-font: "Montserrat", sans-serif;
+    --alternative-font: "Cinzel", serif;
+}
+
+* {
+    font-family: var(--text-font);
+    font-weight: 400;
+    font-style: normal;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--heading-font);
+}
+
+h2, h3 {
+    font-family: var(--heading-font);
+    color: var(--secondary-text-color);
+}
+
+header, footer {
+    font-family: var(--heading-font);
+    background-color: var(--primary-color);
+    color: var(--primary-text-color);
+    padding: 20px;
+    border: 10px double;
+    border-color: var(--secondary-color);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+body {
+    background-color: var(--third-text-color);
+    color: var(--secondary-text-color);
+}
+
+.bebas {
+    font-family: var(--heading-font);
+}
+
+.cinzel {
+    font-family: var(--alternative-font);
+}
